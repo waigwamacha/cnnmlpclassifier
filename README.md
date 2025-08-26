@@ -16,26 +16,18 @@
 I used a training set that comprised of participants from 6 sites (ABIDE I & II, CMI, CORR, NIH and PING). The training sample included 2884 healthy participants (Mean age=15.43, SD=5.79); 2308 participants were used for training, while 576 were used as the validation set
 
 <p float="left">
-  <img src="figures/train_distribution.png" style="width:45%; height:auto;"/>
+  <img src="figures/train_distribution.png" style="width:65%; height:auto;"/>
 </p>
 
 #### Testing Data
 
 Testing Set: I estimated brain age on 790 participants (1500 scans, Mean age=13.60,SD=3.48) from the Brazilian High Risk Cohort (BHRC), a large community-based study investigating psychopathology over development (Salum et al., 2015), 274 participants from the FORBOW cohort (673 scans, Mean age=15.20,SD=4.00), and 8753 participants from the ABCD cohort (Mean age=10.30,SD=3.48). We then estimated BAG (BAG = predicted age – chronological age).
 
+<figcaption>BHRC, Forbow and ABCD Age Distributions</figcaption>
 <p float="left">
-  <figure>
-    <figcaption>BHRC Age Distribution</figcaption>
     <img src="figures/bhrc_age_distribution.png" style="width:35%; height:auto;"/>
-  </figure>
-  <figure>
-    <figcaption>Forbow Age Distribution</figcaption>
     <img src="figures/frb_age_distribution.png" style="width:35%; height:auto;" />
-  </figure>
-  <figure>
-    <figcaption>ABCD Age Distribution</figcaption>
     <img src="figures/abcd_age_distribution.png" style="width:35%; height:auto;" />
-  </figure>
 </p>
 
 #### Model performance
@@ -45,15 +37,10 @@ Testing Set: I estimated brain age on 790 participants (1500 scans, Mean age=13.
     2. I Normalized the age. This helped a bit
     3. I experimented with ```L1``` and ```L2``` regularization. L2 regularization ultimately allowed the model to perform as expected. This makes sense given that L2 regularization smooths the loss function, which is important in aiding the models predictions to be stable
 
+<figcaption>Model performance before and L2 regularization</figcaption>
 <p float="left">
-  <figure>
-    <figcaption>Before regularization</figcaption>
-    <img src="figures/trainingvalidationloss30epochs.png" style="width:35%; height:auto;"/>
-  </figure>
-  <figure>
-    <figcaption>After L2 regularization</figcaption>
-    <img src="figures/neptune-2025-08-14-L2normtrainingvalidationloss.png" style="width:35%; height:auto;" />
-  </figure>
+    <img src="figures/trainingvalidationloss30epochs.png" style="width:40%; height:auto;"/>
+    <img src="figures/neptune-2025-08-14-L2normtrainingvalidationloss.png" style="width:40%; height:auto;" />
 </p>
 
 I chose the best performing model and tested it in our 3 cohorts.
@@ -62,20 +49,13 @@ I chose the best performing model and tested it in our 3 cohorts.
 
 The CNN-MLP-Classifier performed alright on our test set as seen in the scatter plots below.
 
+<figcaption>BHRC, Forbow and ABCD Predictions</figcaption>
 <p float="left">
-  <figure>
-    <figcaption>BHRC Predictions</figcaption>
     <img src="figures/bhrc_chronological_predicted_plot.png" style="width:35%; height:auto;"/>
-  </figure>
-  <figure>
-    <figcaption>Forbow Predictions</figcaption>
     <img src="figures/frb_chronological_predicted_plot.png" style="width:35%; height:auto;" />
-  </figure>
-  <figure>
-    <figcaption>ABCD Predictions</figcaption>
     <img src="figures/abcd_chronological_predicted_plot.png" style="width:35%; height:auto;" />
-  </figure>
 </p>
+
 
 - The model performs well, but not as well as XGBoost, which I had tested earlier. One limitation is that we dont have much data (2,884 is not enough data for a CNN unfortunately). So, in the end we decided to stick with the XGboost model. 
 
