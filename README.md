@@ -16,7 +16,7 @@
 I used a training set that comprised of participants from 6 sites (ABIDE I & II, CMI, CORR, NIH and PING). The training sample included 2884 healthy participants (Mean age=15.43, SD=5.79); 2308 participants were used for training, while 576 were used as the validation set
 
 <p float="left">
-  <img src="figures/train_distribution.png" style="width:45%; height:auto;"/>
+  <img src="figures/train_distribution.png" style="width:65%; height:auto;"/>
 </p>
 
 #### Testing Data
@@ -24,18 +24,12 @@ I used a training set that comprised of participants from 6 sites (ABIDE I & II,
 Testing Set: I estimated brain age on 790 participants (1500 scans, Mean age=13.60,SD=3.48) from the Brazilian High Risk Cohort (BHRC), a large community-based study investigating psychopathology over development (Salum et al., 2015), 274 participants from the FORBOW cohort (673 scans, Mean age=15.20,SD=4.00), and 8753 participants from the ABCD cohort (Mean age=10.30,SD=3.48). We then estimated BAG (BAG = predicted age – chronological age).
 
 <p float="left">
-  <figure>
     <figcaption>BHRC Age Distribution</figcaption>
     <img src="figures/bhrc_age_distribution.png" style="width:35%; height:auto;"/>
-  </figure>
-  <figure>
     <figcaption>Forbow Age Distribution</figcaption>
     <img src="figures/frb_age_distribution.png" style="width:35%; height:auto;" />
-  </figure>
-  <figure>
     <figcaption>ABCD Age Distribution</figcaption>
     <img src="figures/abcd_age_distribution.png" style="width:35%; height:auto;" />
-  </figure>
 </p>
 
 #### Model performance
