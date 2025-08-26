@@ -1,0 +1,16 @@
+
+ipykernel==6.30.0
+jupyter==1.1.1
+ipython==8.12.3
+matplotlib==3.10.3
+matplotlib-inline==0.1.7
+nibabel==5.3.2
+numpy==2.3.1
+pandas==2.3.1
+plotnine==0.15.0
+pyprojroot==0.3.0
+scikit-learn==1.7.1
+torch==2.7.1
+torchinfo==1.8.0
+torchvision==0.22.1
+tqdm==4.67.1

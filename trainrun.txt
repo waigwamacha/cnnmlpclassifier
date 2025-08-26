@@ -1,0 +1,144 @@
+nohup: ignoring input
+Hostname is: neptune, training on: cuda
+Train mean: 15.427753927254452, std 5.778836817291233, Standardized mean: 1.577888101618543e-16
+Train mean: 15.427753927254452, std 5.778836817291233, Standardized mean: 1.577888101618543e-16
+
+  0%|          | 0/30 [00:00<?, ?it/s]/home/murage/Documents/repos/cnnmlp/venv/lib/python3.11/site-packages/torch/nn/modules/loss.py:128: UserWarning: Using a target size (torch.Size([4, 1])) that is different to the input size (torch.Size([1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.l1_loss(input, target, reduction=self.reduction)
+/home/murage/Documents/repos/cnnmlp/venv/lib/python3.11/site-packages/torch/nn/modules/loss.py:128: UserWarning: Using a target size (torch.Size([2, 1])) that is different to the input size (torch.Size([1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.l1_loss(input, target, reduction=self.reduction)
+  3%|▎         | 1/30 [06:40<3:13:35, 400.52s/it]  7%|▋         | 2/30 [13:19<3:06:24, 399.44s/it] 10%|█         | 3/30 [20:02<3:00:29, 401.10s/it] 13%|█▎        | 4/30 [26:32<2:51:55, 396.74s/it] 17%|█▋        | 5/30 [33:04<2:44:35, 395.03s/it] 20%|██        | 6/30 [39:36<2:37:41, 394.22s/it] 23%|██▎       | 7/30 [46:13<2:31:24, 394.97s/it] 27%|██▋       | 8/30 [52:46<2:24:34, 394.29s/it] 30%|███       | 9/30 [59:28<2:18:53, 396.83s/it] 33%|███▎      | 10/30 [1:05:56<2:11:17, 393.88s/it] 37%|███▋      | 11/30 [1:12:31<2:04:52, 394.36s/it] 40%|████      | 12/30 [1:18:58<1:57:41, 392.28s/it] 43%|████▎     | 13/30 [1:25:23<1:50:27, 389.84s/it] 47%|████▋     | 14/30 [1:31:55<1:44:11, 390.70s/it] 50%|█████     | 15/30 [1:38:30<1:37:57, 391.87s/it] 53%|█████▎    | 16/30 [1:45:09<1:31:56, 394.03s/it] 57%|█████▋    | 17/30 [1:51:34<1:24:46, 391.25s/it] 60%|██████    | 18/30 [1:58:08<1:18:24, 392.00s/it] 63%|██████▎   | 19/30 [2:04:44<1:12:05, 393.26s/it] 67%|██████▋   | 20/30 [2:11:14<1:05:24, 392.45s/it] 70%|███████   | 21/30 [2:17:51<59:03, 393.77s/it]   73%|███████▎  | 22/30 [2:24:18<52:14, 391.79s/it] 77%|███████▋  | 23/30 [2:30:39<45:18, 388.41s/it] 80%|████████  | 24/30 [2:37:06<38:47, 387.91s/it] 83%|████████▎ | 25/30 [2:43:33<32:19, 387.81s/it] 87%|████████▋ | 26/30 [2:50:08<25:59, 389.93s/it] 90%|█████████ | 27/30 [2:56:46<19:37, 392.39s/it] 93%|█████████▎| 28/30 [3:03:10<12:59, 389.92s/it] 97%|█████████▋| 29/30 [3:09:45<06:31, 391.30s/it]100%|██████████| 30/30 [3:16:18<00:00, 391.81s/it]100%|██████████| 30/30 [3:16:18<00:00, 392.61s/it]
+/home/murage/Documents/repos/cnnmlp/src/train.py:229: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  tracking_mean_trainloss = [torch.tensor(t).cpu() for t in tracking_mean_trainloss]
+/home/murage/Documents/repos/cnnmlp/src/train.py:230: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.detach().clone() or sourceTensor.detach().clone().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  tracking_mean_valloss = [torch.tensor(t).cpu() for t in tracking_mean_valloss]
+Right on: Data loaded succesfully, training mlpclassifier ... 
+Epoch 1/30:
+ -----------
+Train loss (acc): 23.92
+Val Loss (acc): 46.10
+Model saved with validation MAE: 46.0951
+Epoch 2/30:
+ -----------
+Train loss (acc): 17.95
+Val Loss (acc): 6.94
+Model saved with validation MAE: 6.9424
+Epoch 3/30:
+ -----------
+Train loss (acc): 15.44
+Val Loss (acc): 3.66
+Model saved with validation MAE: 3.6552
+Epoch 4/30:
+ -----------
+Train loss (acc): 13.27
+Val Loss (acc): 4.05
+Epoch 5/30:
+ -----------
+Train loss (acc): 10.94
+Val Loss (acc): 8.02
+Epoch 6/30:
+ -----------
+Train loss (acc): 10.02
+Val Loss (acc): 11.19
+Epoch 7/30:
+ -----------
+Train loss (acc): 10.31
+Val Loss (acc): 4.25
+Epoch 8/30:
+ -----------
+Train loss (acc): 9.69
+Val Loss (acc): 3.22
+Model saved with validation MAE: 3.2187
+Epoch 9/30:
+ -----------
+Train loss (acc): 8.75
+Val Loss (acc): 8.27
+Epoch 10/30:
+ -----------
+Train loss (acc): 8.20
+Val Loss (acc): 6.97
+Epoch 11/30:
+ -----------
+Train loss (acc): 8.01
+Val Loss (acc): 12.29
+Epoch 12/30:
+ -----------
+Train loss (acc): 6.33
+Val Loss (acc): 3.22
+Epoch 13/30:
+ -----------
+Train loss (acc): 5.82
+Val Loss (acc): 4.45
+Epoch 14/30:
+ -----------
+Train loss (acc): 5.69
+Val Loss (acc): 3.14
+Model saved with validation MAE: 3.1446
+Epoch 15/30:
+ -----------
+Train loss (acc): 5.43
+Val Loss (acc): 21.65
+Epoch 16/30:
+ -----------
+Train loss (acc): 5.22
+Val Loss (acc): 5.76
+Epoch 17/30:
+ -----------
+Train loss (acc): 5.22
+Val Loss (acc): 4.16
+Epoch 18/30:
+ -----------
+Train loss (acc): 5.45
+Val Loss (acc): 7.16
+Epoch 19/30:
+ -----------
+Train loss (acc): 5.24
+Val Loss (acc): 3.05
+Model saved with validation MAE: 3.0497
+Epoch 20/30:
+ -----------
+Train loss (acc): 5.21
+Val Loss (acc): 5.50
+Epoch 21/30:
+ -----------
+Train loss (acc): 5.09
+Val Loss (acc): 10.95
+Epoch 22/30:
+ -----------
+Train loss (acc): 5.14
+Val Loss (acc): 25.66
+Epoch 23/30:
+ -----------
+Train loss (acc): 5.15
+Val Loss (acc): 3.00
+Model saved with validation MAE: 2.9979
+Epoch 24/30:
+ -----------
+Train loss (acc): 5.01
+Val Loss (acc): 7.79
+Epoch 25/30:
+ -----------
+Train loss (acc): 4.94
+Val Loss (acc): 19.51
+Epoch 26/30:
+ -----------
+Train loss (acc): 5.04
+Val Loss (acc): 4.25
+Epoch 27/30:
+ -----------
+Train loss (acc): 4.88
+Val Loss (acc): 39.38
+Epoch 28/30:
+ -----------
+Train loss (acc): 4.93
+Val Loss (acc): 4.76
+Epoch 29/30:
+ -----------
+Train loss (acc): 5.05
+Val Loss (acc): 2.97
+Model saved with validation MAE: 2.9700
+Epoch 30/30:
+ -----------
+Train loss (acc): 4.82
+Val Loss (acc): 4.07
+Took 3:16:19.862703 to run
