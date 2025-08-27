@@ -15,9 +15,13 @@
 
 I used a training set that comprised of participants from 6 sites (ABIDE I & II, CMI, CORR, NIH and PING). The training sample included 2884 healthy participants (Mean age=15.43, SD=5.79); 2308 participants were used for training, while 576 were used as the validation set
 
+<figcaption>Age distribution of Train and Validation sets</figcaption>
 <p float="left">
-  <img src="figures/train_distribution.png" style="width:65%; height:auto;"/>
+    <img src="figures/train_age_distribution.png" style="width:40%; height:auto;"/>
+    <img src="figures/validation_age_distribution.png" style="width:40%; height:auto;" />
 </p>
+
+
 
 #### Testing Data
 
