@@ -63,6 +63,18 @@ The CNN-MLP-Classifier performed alright on our test set as seen in the scatter 
 
 - The model performs well, but not as well as XGBoost, which I had tested earlier. One limitation is that we dont have much data (2,884 is not enough data for a CNN unfortunately). So, in the end we decided to stick with the XGboost model. 
 
+#### Associations with Developmental Psychopathology
+
+- The promise of brain age prediction is its use for predicting mental illness. In the current study, we aimed to understand whether brain age gap (Predicted age - chronological age) had any associations with developmental psychopathology (adhd, anxiety, psychotic symptoms). An understanding of this relationship would inform the usefulness of BAG in predicting later mental illnesses.
+
+- We did not find any significant associations with anxiety, ADHD or depression. 
+
+<figcaption>BHRC, Forbow Associations with ADHD, Anxiety</figcaption>
+<p float="left">
+    <img src="figures/bhrc_effect_size_xgboost.png" style="width:35%; height:auto;"/>
+    <img src="figures/frb_effect_size.png" style="width:35%; height:auto;" />
+</p>
+p.s. BHRC did not have as much data, so we were limited in the statistics we could run, hence the minimal associations shown in the figure.
 #### Next steps 
 If we can get access to more data, some of the exciting follow ups I would like to investigate are:
 
