@@ -69,12 +69,14 @@ The CNN-MLP-Classifier performed alright on our test set as seen in the scatter 
 
 - We did not find any significant associations with anxiety, ADHD or depression. 
 
-<figcaption>BHRC, Forbow Associations with ADHD, Anxiety</figcaption>
+<figcaption>BHRC, Forbow, ABCD Associations with ADHD, Anxiety (& other variables where present)</figcaption>
 <p float="left">
-    <img src="figures/bhrc_effect_size_xgboost.png" style="width:35%; height:auto;"/>
-    <img src="figures/frb_effect_size.png" style="width:35%; height:auto;" />
+    <img src="figures/bhrc_effect_size_xgboost.png" style="width:25%; height:auto;"/>
+    <img src="figures/frb_effect_size.png" style="width:25%; height:auto;" />
+    <img src="figures/abcd_effect_size.png" style="width:25%; height:auto;" />
 </p>
-p.s. BHRC did not have as much data, so we were limited in the statistics we could run, hence the minimal associations shown in the figure.
+p.s. BHRC & ABCD did not have as much data as FORBOW, so we were limited in the statistics we could run... hence the minimal associations shown in the figure.
+
 #### Next steps 
 If we can get access to more data, some of the exciting follow ups I would like to investigate are:
 
