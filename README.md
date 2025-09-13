@@ -8,7 +8,7 @@
 - I utilized a modified version of the VGG-16 architecture given its commendable performance in brain age estimation [Joo et al., 2023]. The input T1w image size for the model is 121*145*121
 
 <p>
-  <img src="figures/cnnmlp.png" style="width:85%; height:auto;"/>
+  <img src="figures/cnnmlp1.png" style="width:85%; height:auto;"/>
 </p>
 
 #### Training Data
